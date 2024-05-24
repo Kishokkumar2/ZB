@@ -24,7 +24,7 @@ const List = () => {
 
   }, [])
   function  del(id){
-    axios.delete('http://localhost:5000/delete/'+id).then(res => {console.log(res)
+    axios.delete('https://zwiggybackend.vercel.app/delete/'+id).then(res => {console.log(res)
     window.location.reload()
     toast.success("Food Removerd Successfully")
   
